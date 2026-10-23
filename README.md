@@ -1,4 +1,5 @@
 > Black Barber | Barbearia
+> ![Black Barber - Página inicial](img/black-barber.png)
 
 Site desenvolvido como meu primeiro projeto de desenvolvimento web, com o objetivo de praticar HTML5 e CSS3 e aprender a criar páginas modernas e responsivas.
 
