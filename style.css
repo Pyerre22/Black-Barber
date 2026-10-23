@@ -1,0 +1,423 @@
+
+/* =========================
+   1. CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    background-color: #111;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   2. CABEÇALHO E NAVEGAÇÃO
+========================= */
+
+header {
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c9a36a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   3. INÍCIO / HERO
+========================= */
+
+#inicio {
+    padding: 100px 40px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("img/barbearia.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+#inicio div p:first-child {
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+#inicio div a {
+    display: inline-block;
+    background-color: #c9a36a;
+    color: #111;
+    padding: 15px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#inicio div a:hover {
+    background-color: white;
+}
+
+
+/* =========================
+   4. SERVIÇOS
+========================= */
+
+#servicos {
+    padding-bottom: 80px;
+}
+
+#servicos h2 {
+    padding: 40px 40px 10px;
+    font-size: 36px;
+    text-align: center;
+    color: #c9a36a;
+}
+
+.subtitulo-servicos {
+    text-align: center;
+    color: #ccc;
+    margin: 0 20px 35px;
+}
+
+#servicos > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 40px;
+}
+
+#servicos > div > div {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+#servicos > div > div:hover {
+    transform: translateY(-6px);
+    border-color: #c9a36a;
+    box-shadow: 0 10px 25px rgba(201, 163, 106, 0.12);
+}
+
+.icone-servico {
+    display: inline-block;
+    color: #c9a36a;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#servicos h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#servicos p {
+    line-height: 1.7;
+}
+
+#servicos .preco-servico {
+    color: #c9a36a;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.link-servico {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color 0.3s;
+}
+
+.link-servico:hover {
+    color: #c9a36a;
+}
+
+
+/* =========================
+   5. DIFERENCIAIS
+========================= */
+
+#diferenciais {
+    padding: 70px 40px;
+    background-color: #191919;
+    text-align: center;
+}
+
+#diferenciais h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #c9a36a;
+}
+
+.subtitulo-diferenciais {
+    color: #ccc;
+    margin-bottom: 45px;
+}
+
+.lista-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.diferencial {
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.diferencial:hover {
+    border-bottom-color: #c9a36a;
+    transform: translateY(-5px);
+}
+
+.diferencial span {
+    display: inline-block;
+    color: #c9a36a;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.diferencial h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.diferencial p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =========================
+   6. SOBRE
+========================= */
+
+#sobre {
+    padding: 80px 40px;
+    background-color: #191919;
+}
+
+#sobre h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #c9a36a;
+}
+
+#sobre p {
+    color: #ccc;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+
+/* =========================
+   7. CONTATO E FORMULÁRIO
+========================= */
+
+#contato {
+    padding: 80px 40px;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #c9a36a;
+}
+
+#contato > p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+#contato form {
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contato input,
+#contato textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    outline: none;
+    border-color: #c9a36a;
+    box-shadow: 0 0 0 2px rgba(201, 163, 106, 0.2);
+}
+
+#contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contato button {
+    background-color: #c9a36a;
+    color: #111;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contato button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   8. RODAPÉ
+========================= */
+
+footer {
+    background-color: #080808;
+    padding: 25px;
+    text-align: center;
+    color: #999;
+}
+
+
+/* =========================
+   9. RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #inicio {
+        padding: 70px 20px;
+    }
+
+    #inicio h1 {
+        font-size: 40px;
+    }
+
+    #servicos {
+        padding-bottom: 50px;
+    }
+
+    #servicos h2 {
+        padding: 40px 20px 10px;
+        font-size: 30px;
+    }
+
+    #servicos > div {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    #diferenciais {
+        padding: 45px 20px;
+    }
+
+    #diferenciais h2 {
+        font-size: 28px;
+    }
+
+    .lista-diferenciais {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #sobre,
+    #contato {
+        padding: 40px 20px;
+    }
+
+    #sobre h2,
+    #contato h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-diferenciais {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio h1 {
+        font-size: 34px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+}
